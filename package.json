@@ -1,0 +1,19 @@
+{
+  "name": "succinctly",
+  "version": "0.0.1",
+  "description": "Succinct framework for route authorisation testing with Mocha",
+  "scripts": {
+    "test": "mocha test/succinctly.js"
+  },
+  "author": "Daniel Shipp",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "statuses": "^1.2.1",
+    "supertest": "~0.14.0"
+  },
+  "devDependencies": {
+    "express": "^4.12.4",
+    "mocha": "^2.2.5"
+  }
+}
