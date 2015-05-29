@@ -30,10 +30,11 @@ exports.configure = function (options) {
 
 _.each(_.keys(request()), function (method) {
 
-  exports[method] = function (url) {
+  exports[method] = function (url, body) {
     return new Suite(_.extend({
       method : method,
-      url    : url
+      url    : url,
+      body   : body
     }, opts));
   };
 

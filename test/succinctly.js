@@ -56,8 +56,9 @@ describe('Profile access suite', function (test) {
   .with(null,   401)
   .run();
 
-  succinctly.get('/users/{{for:id}}').for(bertie)
-  .describe('Fetch {{for:name.first}}\'s user profile')
+  succinctly.get('/users/{{about:id}}')
+  .about(bertie)
+  .describe('Fetch {{about:name.first}}\'s user profile')
   .with(bertie, 200)
   .with(alfred, 403)
   .with(null,   401)
