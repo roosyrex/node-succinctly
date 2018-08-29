@@ -3,7 +3,7 @@ var request = require('supertest');
 var Suite   = require('./lib/suite');
 
 var opts = {
-  fns: []
+  fns: {}
 };
 
 // Exports.
@@ -41,3 +41,5 @@ _.each(_.keys(request()), function (method) {
 });
 
 exports.use = function (id, fn) { opts.fns[id] = fn; };
+
+exports.fns = opts.fns;
