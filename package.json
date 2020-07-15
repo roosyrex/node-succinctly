@@ -8,7 +8,7 @@
   "author": "Daniel Shipp",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^2.4.1",
+    "lodash": "^4.17.19",
     "statuses": "^1.2.1",
     "supertest": "~3.3.0"
   },
